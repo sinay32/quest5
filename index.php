@@ -1,5 +1,14 @@
-<?php include_once ('functions.php');
+﻿<?php include_once ('functions.php');
 $resultCountry = getCountry();
+
+if ($_POST["btn"]) {
+
+    if (!empty($_POST["name"]) && checkName($_POST["name"])) {
+        addCountry($_POST["name"]);
+    }
+}
+
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -18,7 +27,7 @@ $resultCountry = getCountry();
                         <?php foreach ($resultCountry as $key => $rate):?>
                     <tr>
                         <td><?php echo xssDef($key); ?></td>
-                        <td><?php echo xssDef($rate["name"]); ?></td>
+                        <td><?php echo ucfirst(xssDef($rate["name"])); ?></td>
                     </tr>
                          <?php endforeach;?>
                 </table>
@@ -35,15 +44,3 @@ $resultCountry = getCountry();
         </div>
     </body>
 </html>
-
-<?php
-    if ($_POST["btn"])
-    {
-        if (!empty($_POST["name"]) and checkName() == false)
-        {
-            addCountry($_POST["name"]);
-        }
-    }
-?>
-
-
