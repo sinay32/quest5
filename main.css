@@ -1,0 +1,72 @@
+/* внешние границы таблицы серого цвета толщиной 1px */
+table {
+	width: 1000px;
+    text-align: center;
+    font-size: 30px;
+}
+/* границы ячеек первого ряда таблицы */
+th {
+   border: 5px solid #23aea3;
+   background-color: #30d5c8;
+   border-radius: 10px;
+   box-shadow: 1px 1px gray;
+   font-family: Verdana, Geneva, sans-serif;
+}
+/* границы ячеек тела таблицы */
+td {
+   border: 1px solid grey;
+   border-radius: 6px;
+   box-shadow: 1px 1px gray;
+   background-color: #afeeee;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+input{
+	width: 200px;
+	text-align: center;
+	
+}
+
+
+.block{
+	display: flex;
+	max-width: 1600px;
+	
+}
+
+.block__table{
+	display: flex;
+	justify-content: center;
+	width: 2000px;
+}
+
+.block__button{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	
+}
+
+
+.block_sumbit{
+	
+}
+
+.country{
+	border: 5px solid #23aea3;
+	font-size: 16px;
+	font-family: Verdana, Geneva, sans-serif;
+	box-shadow: 2px 2px 1px 1px gray;
+	
+}
+
+.sumbit{
+	font-size: 16px;
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: #30d5c8;
+	border-radius: 20px;
+	border: 5px solid #23aea3;
+	box-shadow: 2px 2px 1px 1px gray;
+	
+}
+
