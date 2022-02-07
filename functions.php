@@ -41,6 +41,7 @@
         return htmlspecialchars($string, ENT_QUOTES);
     }
 
+
     function checkName($name)
     {
         $list = getCountry();

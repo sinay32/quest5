@@ -27,7 +27,7 @@ if ($_POST["btn"]) {
                         <?php foreach ($resultCountry as $key => $rate):?>
                     <tr>
                         <td><?php echo xssDef($key); ?></td>
-                        <td><?php echo ucfirst(xssDef($rate["name"])); ?></td>
+                        <td><?php echo mb_convert_case(xssDef($rate["name"]), MB_CASE_TITLE); ?></td>
                     </tr>
                          <?php endforeach;?>
                 </table>
