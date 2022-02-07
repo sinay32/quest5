@@ -1,24 +1,23 @@
-/* внешние границы таблицы серого цвета толщиной 1px */
-table {
+table{
 	width: 1000px;
-    text-align: center;
-    font-size: 30px;
+    	text-align: center;
+    	font-size: 30px;
 }
-/* границы ячеек первого ряда таблицы */
-th {
-   border: 5px solid #23aea3;
-   background-color: #30d5c8;
-   border-radius: 10px;
-   box-shadow: 1px 1px gray;
-   font-family: Verdana, Geneva, sans-serif;
+
+th{
+   	border: 5px solid #23aea3;
+   	background-color: #30d5c8;
+   	border-radius: 10px;
+   	box-shadow: 1px 1px gray;
+   	font-family: Verdana, Geneva, sans-serif;
 }
-/* границы ячеек тела таблицы */
-td {
-   border: 1px solid grey;
-   border-radius: 6px;
-   box-shadow: 1px 1px gray;
-   background-color: #afeeee;
-   font-family: "Comic Sans MS", cursive, sans-serif;
+
+td{
+   	border: 1px solid grey;
+   	border-radius: 6px;
+   	box-shadow: 1px 1px gray;
+   	background-color: #afeeee;
+   	font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 input{
@@ -31,7 +30,6 @@ input{
 .block{
 	display: flex;
 	max-width: 1600px;
-	
 }
 
 .block__table{
@@ -44,7 +42,6 @@ input{
 	display: flex;
 	flex-direction: column;
 	align-items:center;
-	
 }
 
 
@@ -67,6 +64,14 @@ input{
 	border-radius: 20px;
 	border: 5px solid #23aea3;
 	box-shadow: 2px 2px 1px 1px gray;
-	
 }
 
+.flyJet{
+	transform:translate(-200px, 500px)
+}
+
+.letsFly{
+	
+	transition: all 1.2s ease-out 0.2s;
+	transform:translate(0px , 0px);
+}

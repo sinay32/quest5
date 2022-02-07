@@ -39,8 +39,12 @@ if ($_POST["btn"]) {
                             <p><input class="country" type="text" name="name" placeholder ="Введите страну" required value=""></p>
                             <p><input class="sumbit" type="submit" name="btn"></p>
                         </div>
+                        <div>
+                            <img class="flyJet" src="flyjet.gif">
+                        </div>
                     </div>
                 </form>
         </div>
     </body>
+    <script src="fly.js"> </script>
 </html>
